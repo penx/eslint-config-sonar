@@ -62,7 +62,7 @@ Where I have found an equivalent in eslint I have listed it.
 #### Values should not be uselessly incremented
 #### Variables should not be self-assigned
 
-### [Code smells](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Code_Smell_Detection)
+### [Code smells](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Code_Smell_Detection)
 
 #### "delete" should not be used on arrays
 #### "future reserved words" should not be used as identifiers
