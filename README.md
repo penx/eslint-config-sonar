@@ -9,9 +9,9 @@ The intention is for this package to include:
 
 - a list of all SonarJS rules and their equivalent in eslint.
 - ports of any rules not covered by existing eslint rules.
-- configs for [Sonar way](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way) and [Sonar way Recommended](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way+Recommended) [profiles](https://docs.sonarqube.org/display/PLUG/SonarJS).
+- configs for eslint-config-sonar/[Sonar way](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way) and eslint-config-sonar:recommended/[Sonar way Recommended](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way+Recommended) [profiles](https://docs.sonarqube.org/display/PLUG/SonarJS).
 
-Ideally I'd also like @SonarSource to take over ownership of this.
+I'd also encourage @SonarSource to take over ownership of this.
 
 ## All Rules
 
@@ -111,7 +111,7 @@ Where I have found an equivalent in eslint I have listed it.
 `no-eval`
 
 #### Cross-document messaging domains should be carefully restricted
-`eslint-plugin-no-wildcard-postmessage`
+`no-wildcard-postmessage` from `eslint-plugin-no-wildcard-postmessage`
 
 #### Debugger statements should not be used
 `no-debugger`
