@@ -1,11 +1,23 @@
 # eslint-config-sonar
 
-eslint configuration to ensure [SonarJS rules](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html) are met, following the ['Sonar Way' preset](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way
+eslint configuration to ensure [SonarJS rules](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html) are met, following the ['Sonar way' preset](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way
 ).
 
-## Included rules
+## Intention for this package
 
-## Rules that need inclusion (TODO:)
+The intention is for this package to include:
+
+- a list of all SonarJS rules and their equivalent in eslint.
+- ports of any rules not covered by existing eslint rules.
+- configs for [Sonar way](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way) and [Sonar way Recommended](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way+Recommended) [profiles](https://docs.sonarqube.org/display/PLUG/SonarJS).
+
+Ideally I'd also like @SonarSource to take over ownership of this.
+
+## All Rules
+
+Currently I am only including those listed in Sonar way.
+
+Where I have found an equivalent in eslint I have listed it.
 
 ### [Bugs](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Bug_Detection)
 
