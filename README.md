@@ -93,7 +93,16 @@ eslint configuration to ensure [SonarJS rules](https://www.sonarsource.com/produ
 ### [Vulnerabilities](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Vulnerability_Detection)
 
 #### "alert(...)" should not be used
+`no-alert`
+
 #### Code should not be dynamically injected and executed
+`no-eval`
+
 #### Cross-document messaging domains should be carefully restricted
+`eslint-plugin-no-wildcard-postmessage`
+
 #### Debugger statements should not be used
+`no-debugger`
+
 #### Function constructors should not be used
+`no-new-func`
