@@ -29,9 +29,11 @@ I'd also encourage @SonarSource to take over ownership of this.
 
 ## All Rules
 
-Currently I am only including those listed in Sonar way.
+Currently I am only including those listed in the Sonar way preset, rather than every rule supported by SonarJS.
 
-Where I have found an equivalent in eslint I have listed it.
+Where I have found an equivalent in eslint, I have listed it.
+
+Where no equivalent is listed, it has not yet been implemented in the eslint config.
 
 ### [Bugs](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Bug_Detection)
 
