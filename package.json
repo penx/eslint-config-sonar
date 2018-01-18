@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/penx/eslint-config-sonar/issues"
   },
-  "homepage": "https://github.com/penx/eslint-config-sonar#readme"
+  "homepage": "https://github.com/penx/eslint-config-sonar#readme",
+  "dependencies": {
+    "eslint-plugin-no-wildcard-postmessage": "^0.1.3"
+  }
 }
