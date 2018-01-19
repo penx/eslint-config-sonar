@@ -67,36 +67,78 @@ eslint throws a parsing error:
 > Parsing error: yield is a reserved word (Fatal)
 
 #### A "for" loop update clause should move the counter in the right direction
+`for-direction`
+
 #### All branches in a conditional structure should not have exactly the same implementation
 #### Attempts should not be made to update "const" variables
+`no-const-assign`
+
 #### Bitwise operators should not be used in boolean contexts
+`no-bitwise`
+
 #### Callbacks of array methods should have return statements
+`array-callback-return`
+
 #### Calls should not be made to non-callable values
 #### Comma and logical OR operators should not be used in switch cases
+Partially covered by `no-sequences`.
+
 #### Conditionally executed blocks should be reachable
 #### Destructuring patterns should not be empty
+`no-empty-pattern`
+
 #### Errors should not be created without being thrown
 #### Function argument names should be unique
+`no-dupe-args`
+
+eslint throws a parsing error in strict mode.
+
+> Parsing error: Argument name clash in strict mode (Fatal)
+
 #### Function calls should not pass extra arguments
 #### Generators should "yield" something
+`require-yield`
+
 #### Identical expressions should not be used on both sides of a binary operator
+Partially covered by `no-self-compare`.
+
 #### Jump statements should not be followed by other statements
+`no-unreachable`
+
 #### Jump statements should not occur in "finally" blocks
+`no-unsafe-finally`
+
 #### Loops should not be infinite
+Partially covered by `no-unreachable`.
+
 #### Multiline blocks should be enclosed in curly braces
 #### Non-empty statements should change control flow or have at least one side-effect
+`no-unused-expressions`
+
 #### Non-existent operators '=+', '=-' and '=!' should not be used
+`space-unary-ops`
+`space-infix-ops`
+
 #### Properties of variables with "null" or "undefined" values should not be accessed
 #### Property names should not be duplicated within a class or object literal
+`no-dupe-keys`
+
 #### Related "if/else if" statements and "cases" in a "switch" should not have the same condition
 #### Results of "in" and "instanceof" should be negated rather than operands
+`no-unsafe-negation`
+
 #### Return values from functions without side effects should not be ignored
 #### Setters should not return values
 #### Special identifiers should not be bound or assigned
+
+eslint throws a parsing error in strict mode:
+> Parsing error: eval is a reserved word in strict mode (Fatal)
+
 #### Strict equality operators should not be used with dissimilar types
 #### The output of functions that don't return anything should not be used
 #### Values should not be uselessly incremented
 #### Variables should not be self-assigned
+`no-self-assign`
 
 ### [Code smells](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Code_Smell_Detection)
 
