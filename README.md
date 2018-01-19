@@ -39,13 +39,33 @@ Where no equivalent is listed, it has not yet been implemented in the eslint con
 
 #### "Array.reverse" should not be used misleadingly
 #### "delete" should be used only with object properties
+`no-delete-var`
+
+eslint throws a parsing error in strict mode.
+
 #### "in" should not be used with primitive types
 #### "NaN" should not be used in comparisons
+`use-isnan`
+
 #### "new" operators should be used with functions
 #### "super()" should be invoked appropriately
+`constructor-super`
+`no-this-before-super`
+
 #### "Symbol" should not be used as a constructor
+`no-new-symbol`
+
 #### "with" statements should not be used
+`no-with`
+
+eslint throws a parsing error in strict mode.
+
 #### "yield" expressions should not be used outside generators
+
+eslint throws a parsing error:
+
+> Parsing error: yield is a reserved word (Fatal)
+
 #### A "for" loop update clause should move the counter in the right direction
 #### All branches in a conditional structure should not have exactly the same implementation
 #### Attempts should not be made to update "const" variables
