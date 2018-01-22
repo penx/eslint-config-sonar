@@ -37,17 +37,14 @@ Where no equivalent is listed, it is listed in the next section and has not yet 
 
 ### [Bugs](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Bug_Detection)
 
-#### "Array.reverse" should not be used misleadingly
 #### "delete" should be used only with object properties
 `no-delete-var`
 
 eslint throws a parsing error in strict mode.
 
-#### "in" should not be used with primitive types
 #### "NaN" should not be used in comparisons
 `use-isnan`
 
-#### "new" operators should be used with functions
 #### "super()" should be invoked appropriately
 `constructor-super`
 `no-this-before-super`
@@ -69,7 +66,6 @@ eslint throws a parsing error:
 #### A "for" loop update clause should move the counter in the right direction
 `for-direction`
 
-#### All branches in a conditional structure should not have exactly the same implementation
 #### Attempts should not be made to update "const" variables
 `no-const-assign`
 
@@ -79,15 +75,12 @@ eslint throws a parsing error:
 #### Callbacks of array methods should have return statements
 `array-callback-return`
 
-#### Calls should not be made to non-callable values
 #### Comma and logical OR operators should not be used in switch cases
 Partially covered by `no-sequences`.
 
-#### Conditionally executed blocks should be reachable
 #### Destructuring patterns should not be empty
 `no-empty-pattern`
 
-#### Errors should not be created without being thrown
 #### Function argument names should be unique
 `no-dupe-args`
 
@@ -95,7 +88,6 @@ eslint throws a parsing error in strict mode.
 
 > Parsing error: Argument name clash in strict mode (Fatal)
 
-#### Function calls should not pass extra arguments
 #### Generators should "yield" something
 `require-yield`
 
@@ -111,7 +103,6 @@ Partially covered by `no-self-compare`.
 #### Loops should not be infinite
 Partially covered by `no-unreachable`.
 
-#### Multiline blocks should be enclosed in curly braces
 #### Non-empty statements should change control flow or have at least one side-effect
 `no-unused-expressions`
 
@@ -119,66 +110,49 @@ Partially covered by `no-unreachable`.
 `space-unary-ops`
 `space-infix-ops`
 
-#### Properties of variables with "null" or "undefined" values should not be accessed
 #### Property names should not be duplicated within a class or object literal
 `no-dupe-keys`
 
-#### Related "if/else if" statements and "cases" in a "switch" should not have the same condition
 #### Results of "in" and "instanceof" should be negated rather than operands
 `no-unsafe-negation`
 
-#### Return values from functions without side effects should not be ignored
-#### Setters should not return values
 #### Special identifiers should not be bound or assigned
 
 eslint throws a parsing error in strict mode:
 > Parsing error: eval is a reserved word in strict mode (Fatal)
 
-#### Strict equality operators should not be used with dissimilar types
-#### The output of functions that don't return anything should not be used
-#### Values should not be uselessly incremented
 #### Variables should not be self-assigned
 `no-self-assign`
 
 ### [Code smells](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Code_Smell_Detection)
 
-#### "delete" should not be used on arrays
 #### "future reserved words" should not be used as identifiers
 All of these are picked up as parsing errors when in strict mode.
 
-#### "indexOf" checks should not be for positive numbers
-#### "switch" statements should have at least 3 "case" clauses
+
 #### "switch" statements should not contain non-case labels
 `no-restricted-syntax`
 `no-labels`
 
-#### A "while" loop should be used instead of a "for" loop
-#### Arguments to built-in functions should match documented types
-#### Array indexes should be numeric
-#### Assignments should not be redundant
+
 #### Boolean expressions should not be gratuitous
 Partial coverage from `no-constant-condition`
 
-#### Collection and array contents should be used
 #### Comma operator should not be used
 `no-sequences`
 
-#### Conditionals should start on new lines
 #### Dead stores should be removed
 `no-unused-vars`
 
 #### Default export names and file names should match
 `filenames/match-exported`
 
-#### Equality operators should not be used in "for" loop termination conditions
 #### Extra semicolons should be removed
 `no-extra-semi`
 
 #### Function call arguments should not start on new lines
 `no-unexpected-multiline`
 
-#### Function parameters with default values should be last
-#### Function returns should not be invariant
 #### Functions should not be called both with and without "new"
 Partial coverage with `new-cap`.
 
@@ -201,14 +175,11 @@ Partial coverage with `no-continue`.
 #### Octal values should not be used
 eslint will throw a parsing error (Invalid number)
 
-#### Redundant pairs of parentheses should be removed
-#### Return of boolean expressions should not be wrapped into an "if-then-else" statement
+
 #### Switch cases should end with an unconditional "break" statement
 `no-fallthrough`
 
-#### The global "this" object should not be used
-#### Two branches in a conditional structure should not have exactly the same implementation
-#### Unary operators "+" and "-" should not be used with objects
+
 #### Unused local variables and functions should be removed
 `no-unused-vars`
 
@@ -237,3 +208,46 @@ eslint will throw a parsing error (Invalid number)
 
 #### Function constructors should not be used
 `no-new-func`
+
+
+## Not yet supported
+
+Please open an issue if you know of an equivalent eslint rule.
+
+### Bugs
+#### "Array.reverse" should not be used misleadingly
+#### "in" should not be used with primitive types
+#### "new" operators should be used with functions
+#### All branches in a conditional structure should not have exactly the same implementation
+#### Calls should not be made to non-callable values
+#### Conditionally executed blocks should be reachable
+#### Errors should not be created without being thrown
+#### Function calls should not pass extra arguments
+#### Multiline blocks should be enclosed in curly braces
+#### Properties of variables with "null" or "undefined" values should not be accessed
+#### Related "if/else if" statements and "cases" in a "switch" should not have the same condition
+#### Return values from functions without side effects should not be ignored
+#### Setters should not return values
+#### Strict equality operators should not be used with dissimilar types
+#### The output of functions that don't return anything should not be used
+#### Values should not be uselessly incremented
+
+### Code smells
+
+#### "delete" should not be used on arrays
+#### "indexOf" checks should not be for positive numbers
+#### "switch" statements should have at least 3 "case" clauses
+#### A "while" loop should be used instead of a "for" loop
+#### Arguments to built-in functions should match documented types
+#### Array indexes should be numeric
+#### Assignments should not be redundant
+#### Collection and array contents should be used
+#### Conditionals should start on new lines
+#### Equality operators should not be used in "for" loop termination conditions
+#### Function parameters with default values should be last
+#### Function returns should not be invariant
+#### Redundant pairs of parentheses should be removed
+#### Return of boolean expressions should not be wrapped into an "if-then-else" statement
+#### The global "this" object should not be used
+#### Two branches in a conditional structure should not have exactly the same implementation
+#### Unary operators "+" and "-" should not be used with objects
