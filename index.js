@@ -25,12 +25,35 @@ module.exports = {
     'no-dupe-keys': 2,
     'no-unsafe-negation': 2,
     'no-self-assign': 2,
+
     // Vulnerabilities: https://sonarcloud.io/organizations/opensource/rules#qprofile=AV7g2D3v6oOvObTbiZD9|activation=true|types=VULNERABILITY
     'no-alert': 1,
     'no-eval': 2,
     'no-debugger': 1,
     'no-new-func': 2,
-    'no-wildcard-postmessage/no-wildcard-postmessage': 2
+    'no-wildcard-postmessage/no-wildcard-postmessage': 2,
+
+    // Code smells: https://sonarcloud.io/organizations/opensource/rules#qprofile=AV7g2D3v6oOvObTbiZD9|activation=true|types=CODE_SMELL
+    'no-restricted-syntax': 2,
+    'no-labels': 2,
+    'no-constant-condition': 2,
+    'no-sequences': 2,
+    'no-unused-vars': 2,
+    'filenames/match-exported': 2,
+    'no-extra-semi': 2,
+    'no-unexpected-multiline': 2,
+    'new-cap': 2,
+    'no-loop-func': 2,
+    'no-continue': 2,
+    'no-restricted-syntax': 2,
+    'no-labels': 2,
+    'no-multi-str': 2,
+    'no-empty': 2,
+    'no-fallthrough': 2,
+    'no-unused-vars': 2,
+    'no-redeclare': 2,
+    'no-undef': 2,
+    'no-new-wrappers': 2
   },
-  plugins: ['no-wildcard-postmessage']
+  plugins: ['no-wildcard-postmessage', 'filenames']
 };

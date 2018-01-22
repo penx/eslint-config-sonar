@@ -144,41 +144,82 @@ eslint throws a parsing error in strict mode:
 
 #### "delete" should not be used on arrays
 #### "future reserved words" should not be used as identifiers
+All of these are picked up as parsing errors when in strict mode.
+
 #### "indexOf" checks should not be for positive numbers
 #### "switch" statements should have at least 3 "case" clauses
 #### "switch" statements should not contain non-case labels
+`no-restricted-syntax`
+`no-labels`
+
 #### A "while" loop should be used instead of a "for" loop
 #### Arguments to built-in functions should match documented types
 #### Array indexes should be numeric
 #### Assignments should not be redundant
 #### Boolean expressions should not be gratuitous
+Partial coverage from `no-constant-condition`
+
 #### Collection and array contents should be used
 #### Comma operator should not be used
+`no-sequences`
+
 #### Conditionals should start on new lines
 #### Dead stores should be removed
+`no-unused-vars`
+
 #### Default export names and file names should match
+`filenames/match-exported`
+
 #### Equality operators should not be used in "for" loop termination conditions
 #### Extra semicolons should be removed
+`no-extra-semi`
+
 #### Function call arguments should not start on new lines
+`no-unexpected-multiline`
+
 #### Function parameters with default values should be last
 #### Function returns should not be invariant
 #### Functions should not be called both with and without "new"
+Partial coverage with `new-cap`.
+
 #### Functions should not be defined inside loops
+`no-loop-func`
+
 #### Jump statements should not be used unconditionally
+Partial coverage with `no-continue`.
+
 #### Labels should not be used
+`no-restricted-syntax`
+`no-labels`
+
 #### Multiline string literals should not be used
+`no-multi-str`
+
 #### Nested blocks of code should not be left empty
+`no-empty`
+
 #### Octal values should not be used
+eslint will throw a parsing error (Invalid number)
+
 #### Redundant pairs of parentheses should be removed
 #### Return of boolean expressions should not be wrapped into an "if-then-else" statement
 #### Switch cases should end with an unconditional "break" statement
+`no-fallthrough`
+
 #### The global "this" object should not be used
 #### Two branches in a conditional structure should not have exactly the same implementation
 #### Unary operators "+" and "-" should not be used with objects
 #### Unused local variables and functions should be removed
+`no-unused-vars`
+
 #### Variables and functions should not be redeclared
+`no-redeclare`
+
 #### Variables should be declared explicitly
+`no-undef`
+
 #### Wrapper objects should not be used for primitive types
+`no-new-wrappers`
 
 ### [Vulnerabilities](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Vulnerability_Detection)
 
