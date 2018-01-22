@@ -17,23 +17,23 @@ Then add the following to your .eslintrc:
 }
 ```
 
-## Intention for this package
+## In Development
 
-The intention is for this package to include:
+This package is in development. The intention is for it to eventually include:
 
 - Documentation of all SonarJS rules and their equivalent in eslint.
 - Ports of any rules not covered by existing eslint rules.
 - eslint configs for [Sonar way](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way) (eslint-config-sonar) and [Sonar way Recommended](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way+Recommended) (eslint-config-sonar:recommended) [profiles](https://docs.sonarqube.org/display/PLUG/SonarJS).
 
-I'd also encourage @SonarSource to take over ownership of this.
+PRs are welcomed and I'd also encourage @SonarSource to take over ownership of this.
 
-## All Rules
+## Supported rules
 
-Currently I am only including those listed in the Sonar way preset, rather than every rule supported by SonarJS.
+Initially I am only aiming to include those listed in the Sonar way preset, rather than every rule supported by SonarJS, purely because this is the preset I'm currently using.
 
-Where I have found an equivalent in eslint, I have listed it.
+Where I have found an equivalent in eslint, it has been listed here and included in the config.
 
-Where no equivalent is listed, it has not yet been implemented in the eslint config.
+Where no equivalent is listed, it is listed in the next section and has not yet been implemented in the eslint config.
 
 ### [Bugs](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Bug_Detection)
 
