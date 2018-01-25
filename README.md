@@ -129,11 +129,9 @@ eslint throws a parsing error in strict mode:
 #### "future reserved words" should not be used as identifiers
 All of these are picked up as parsing errors when in strict mode.
 
-
 #### "switch" statements should not contain non-case labels
 `no-restricted-syntax`
 `no-labels`
-
 
 #### Boolean expressions should not be gratuitous
 Partial coverage from `no-constant-condition`

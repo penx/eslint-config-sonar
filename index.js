@@ -39,21 +39,21 @@ module.exports = {
     'no-constant-condition': 2,
     'no-sequences': 2,
     'no-unused-vars': 2,
-    'filenames/match-exported': 2,
-    'no-extra-semi': 2,
-    'no-unexpected-multiline': 2,
+    'filenames/match-exported': 1,
+    'no-extra-semi': 1,
+    'no-unexpected-multiline': 1,
     'new-cap': 2,
     'no-loop-func': 2,
     'no-continue': 2,
     'no-restricted-syntax': 2,
     'no-labels': 2,
-    'no-multi-str': 2,
+    'no-multi-str': 1,
     'no-empty': 2,
     'no-fallthrough': 2,
-    'no-unused-vars': 2,
+    'no-unused-vars': 1,
     'no-redeclare': 2,
     'no-undef': 2,
-    'no-new-wrappers': 2
+    'no-new-wrappers': 1
   },
   plugins: ['no-wildcard-postmessage', 'filenames']
 };
