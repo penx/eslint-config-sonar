@@ -1,5 +1,7 @@
 # eslint-config-sonar
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/penx/eslint-config-sonar.svg)](https://greenkeeper.io/)
+
 eslint configuration to ensure [SonarJS rules](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html) are met, following the ['Sonar way' preset](https://sonarcloud.io/organizations/opensource/quality_profiles/show?language=js&name=Sonar+way
 ).
 
