@@ -23,5 +23,11 @@
   "dependencies": {
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-no-wildcard-postmessage": "^0.1.3"
+  },
+  "peerDependencies": {
+    "eslint-plugin-sonarjs": ">=0.3.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-sonarjs": "^0.3.0"
   }
 }
