@@ -78,6 +78,9 @@ eslint throws a parsing error:
 #### Callbacks of array methods should have return statements
 `array-callback-return`
 
+#### Collection elements should not be replaced unconditionally
+`sonarjs/no-element-overwrite`
+
 #### Comma and logical OR operators should not be used in switch cases
 Partially covered by `no-sequences`.
 
@@ -101,7 +104,7 @@ eslint throws a parsing error in strict mode.
 Partially covered by `no-self-compare`.
 `sonarjs/no-identical-expressions`
 
-#### Jump statements should not be followed by other statements
+#### Jump statements should not be followed by dead code
 `no-unreachable`
 
 #### Jump statements should not occur in "finally" blocks
@@ -140,6 +143,9 @@ eslint throws a parsing error in strict mode:
 
 ### [Code smells](https://www.sonarsource.com/products/codeanalyzers/sonarjs/rules.html#Code_Smell_Detection)
 
+#### "catch" clauses should do more than rethrow
+`sonarjs/no-useless-catch`
+
 #### "future reserved words" should not be used as identifiers
 All of these are picked up as parsing errors when in strict mode.
 
@@ -151,9 +157,15 @@ All of these are picked up as parsing errors when in strict mode.
 `no-restricted-syntax`
 `no-labels`
 
+#### "switch" statements should not have too many "case" clauses
+`sonarjs/max-switch-cases`
+
 #### A "while" loop should be used instead of a "for" loop
 
 `sonarjs/prefer-while`
+
+#### Boolean checks should not be inverted
+`sonarjs/no-inverted-boolean-check`
 
 #### Boolean expressions should not be gratuitous
 Partial coverage from `no-constant-condition`
@@ -224,41 +236,34 @@ eslint will throw a parsing error (Invalid number)
 #### "alert(...)" should not be used
 `no-alert`
 
-#### Code should not be dynamically injected and executed
-`no-eval`
-
 #### Cross-document messaging domains should be carefully restricted
 `no-wildcard-postmessage` from `eslint-plugin-no-wildcard-postmessage`
 
 #### Debugger statements should not be used
 `no-debugger`
 
-#### Function constructors should not be used
-`no-new-func`
-
 ## Not yet supported
 
 Please open an issue if you know of an equivalent eslint rule.
 
 ### Bugs
-#### "Array.reverse" should not be used misleadingly
 #### "in" should not be used with primitive types
 #### "new" operators should be used with functions
 #### Calls should not be made to non-callable values
+#### Collection sizes and array length comparisons should make sense
 #### Conditionally executed blocks should be reachable
 #### Errors should not be created without being thrown
-#### Multiline blocks should be enclosed in curly braces
 #### Properties of variables with "null" or "undefined" values should not be accessed
 #### Return values from functions without side effects should not be ignored
 #### Setters should not return values
 #### Strict equality operators should not be used with dissimilar types
-
 #### Values should not be uselessly incremented
 
 ### Code smells
 
 #### "delete" should not be used on arrays
 #### "indexOf" checks should not be for positive numbers
+#### A conditionally executed single line should be denoted by indentation
 #### Arguments to built-in functions should match documented types
 #### Array indexes should be numeric
 #### Assignments should not be redundant
@@ -267,6 +272,8 @@ Please open an issue if you know of an equivalent eslint rule.
 #### Equality operators should not be used in "for" loop termination conditions
 #### Function parameters with default values should be last
 #### Function returns should not be invariant
+#### Multiline blocks should be enclosed in curly braces
 #### Redundant pairs of parentheses should be removed
 #### The global "this" object should not be used
 #### Unary operators "+" and "-" should not be used with objects
+#### Unnecessary imports should be removed

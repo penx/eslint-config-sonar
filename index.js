@@ -12,6 +12,7 @@ module.exports = {
     'no-const-assign': 2,
     'no-bitwise': 2,
     'array-callback-return': 2,
+    'sonarjs/no-element-overwrite': 2,
     'no-sequences': 2,
     'no-empty-pattern': 2,
     'no-dupe-args': 2,
@@ -33,16 +34,17 @@ module.exports = {
 
     // Vulnerabilities: https://sonarcloud.io/organizations/opensource/rules#qprofile=AV7g2D3v6oOvObTbiZD9|activation=true|types=VULNERABILITY
     'no-alert': 1,
-    'no-eval': 2,
     'no-debugger': 1,
-    'no-new-func': 2,
     'no-wildcard-postmessage/no-wildcard-postmessage': 2,
 
     // Code smells: https://sonarcloud.io/organizations/opensource/rules#qprofile=AV7g2D3v6oOvObTbiZD9|activation=true|types=CODE_SMELL
+    'sonarjs/no-useless-catch': 1,
     'sonarjs/no-small-switch': 1,
     'no-restricted-syntax': 2,
     'no-labels': 2,
+    'sonarjs/max-switch-cases': 2,
     'sonarjs/prefer-while': 1,
+    'sonarjs/no-inverted-boolean-check': 1,
     'no-constant-condition': 2,
     'no-sequences': 2,
     'no-unused-vars': 2,
