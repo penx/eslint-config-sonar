@@ -66,5 +66,5 @@ module.exports = {
     'no-undef': 2,
     'no-new-wrappers': 1
   },
-  plugins: ['no-wildcard-postmessage', 'filenames']
+  plugins: ['no-wildcard-postmessage', 'filenames', 'sonarjs']
 };
