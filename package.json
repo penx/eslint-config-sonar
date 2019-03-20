@@ -22,12 +22,7 @@
   "homepage": "https://github.com/penx/eslint-config-sonar#readme",
   "dependencies": {
     "eslint-plugin-filenames": "^1.2.0",
-    "eslint-plugin-no-wildcard-postmessage": "^0.1.3"
-  },
-  "peerDependencies": {
-    "eslint-plugin-sonarjs": ">=0.3.0"
-  },
-  "devDependencies": {
+    "eslint-plugin-no-wildcard-postmessage": "^0.1.3",
     "eslint-plugin-sonarjs": "^0.3.0"
   }
 }
