@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sonar",
-  "version": "0.0.6",
+  "version": "0.0.7-0",
   "description": "eslint configuration to ensure SonarJS rules are met",
   "main": "index.js",
   "scripts": {
